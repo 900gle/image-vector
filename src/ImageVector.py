@@ -15,9 +15,7 @@ def get_image_feature_vectors() :
     module_handle = "https://tfhub.dev/google/imagenet/mobilenet_v2_140_224/feature_vector/4"
     module = hub.load(module_handle)
 
-    # origin_image = "./images/origin.png"
-    origin_image = "./images/target3.png"
-    # origin_image = "./images/image_test1.png"
+    origin_image = "./images/image1.jpeg"
     img = load_img(origin_image)
     features = module(img)
 
@@ -25,7 +23,6 @@ def get_image_feature_vectors() :
 
     feature_set = np.squeeze(features)
 
-    # print(feature_set)
     print("vector dmis : " , len(feature_set))
 
 get_image_feature_vectors()
