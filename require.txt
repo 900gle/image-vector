@@ -1,4 +1,3 @@
 tensorflow
 tensorflow_hub
 numpy
-ssl

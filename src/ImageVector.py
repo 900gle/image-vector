@@ -18,11 +18,8 @@ def get_image_feature_vectors() :
     origin_image = "./images/image1.jpeg"
     img = load_img(origin_image)
     features = module(img)
-
     print(features)
-
     feature_set = np.squeeze(features)
-
     print("vector dmis : " , len(feature_set))
 
 get_image_feature_vectors()
